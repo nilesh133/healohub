@@ -1,0 +1,431 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    padding: 0.5rem 4rem;
+}
+
+#name h2, h4{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+}
+#name h2{
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+}
+
+#name h4{
+    font-weight: bolder;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: rgb(39, 39, 201);
+    margin-top: -0.2rem;
+}
+
+#navbar ul{
+    margin: 0;
+}
+
+#navbar ul li{
+    display: inline-block;
+    padding-right: 2rem;
+}
+
+#navbar ul li a{
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: text-decoration 1s, color 1s;
+}
+
+#navbar ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(39, 39, 201);
+    height: 2px;
+    width: 0;
+    bottom: -25%;
+    left: 0;
+    transition: width 0.4s;
+}
+
+#navbar ul li a:hover{
+    color: rgb(39, 39, 201);
+}
+
+#navbar ul li a:hover:after{
+    width: 100%;
+}
+
+#navbar li .active{
+    color: rgb(39, 39, 201);
+   
+}
+
+#middle-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background:rgba(0,0,0,0.1) url("../images/homebg.png");
+    background-position: center;
+    height: 35rem;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding-left: 4rem;
+}
+
+#middle-content h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+#front-page-button{
+    background-color: rgb(39, 39, 201);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 2rem;
+    letter-spacing: 2px;
+    margin-right: 0.8rem;
+    margin-bottom: 4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#home-search-container{
+    position: relative;
+    width: 10rem;
+}
+
+.fa-search{
+    position: absolute;
+    color: black;
+    left: 5%;
+    top: 18%;
+    font-size: 1.2rem;
+}
+
+::placeholder{
+    color: white;
+    letter-spacing: 1px;
+}
+
+input{
+    border: 2px solid white;
+    background-color: transparent;
+    width: 25rem;
+    border-radius: 1rem;
+    height: 2rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    outline: none;
+    color: white;
+}
+
+#service-heading{
+    text-align: center;
+    background-color: white;
+}
+
+#service-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    padding-bottom: 4.5rem;
+}
+
+.service-div{
+    height: 10rem;
+    width: 23rem;
+    margin: 0.8rem;
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    box-shadow:  12px 12px 20px #bec4c9,
+    -12px -12px 20px #ffffff;
+    transition: transform 1s;
+}
+
+.service-div-heading{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.service-div p{
+    font-size: 1rem;
+}
+
+.service-div-heading i{
+    color: rgb(39, 39, 201);
+    margin-right: 0.5rem;
+}
+
+.service-div:hover{
+    transform: scale(1.2, 1.2);
+}
+
+#best-main-heading{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+#best-main-heading h1{
+    padding: 4rem 0.7rem 0.8rem;
+    margin: 0;
+}
+
+#best{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    padding-bottom: 4.5rem;
+    background-color: aliceblue;
+}
+
+.best-div{
+    height: 9.5rem;
+    width: 21.5rem;
+    margin: 0.8rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow:  12px 12px 20px #bec4c9,
+             -12px -12px 20px #ffffff; 
+}
+
+.best-div p{
+    font-size: 0.9rem;
+    padding: 0.7rem;
+    color:rgba(139, 79, 79, 0.8);
+    line-height: 1.3rem;
+}
+
+.best-div-heading{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#best .fas, .far{
+    color: rgb(39, 39, 201);
+    padding: 0.3rem;
+    margin-right: 0.3rem;
+    font-size: 1.8rem;
+}
+
+.best-div:hover{
+    background-image: linear-gradient(to right, rgb(219, 33, 64) , yellow);
+    box-shadow: 5px 10px 18px #888888;
+}
+
+#testimonials-wrapper{
+    padding: 3rem 1rem;
+}
+
+#testimonials-section {
+    width: 100%;
+    padding: 8rem 0;
+    text-align: center;
+}
+
+#testimonials-heading {
+    color: black;
+    margin: 0;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+#testimonials-section > h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+#testimonials-desc {
+    max-width: 700px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0 auto;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 3.4rem;
+}
+
+#testimonials-wrapper {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-item {
+    width: 25%;
+    text-align: center;
+    background-color: #f5f6fb;
+    padding: 2.5rem 1.9rem;
+    margin: 16px;
+    border-top-left-radius: 2.8rem;
+    border-bottom-left-radius: 2.8rem;
+    border-bottom-right-radius: 2.8rem;
+    transition: box-shadow 0.3s;
+}
+
+.testimonial-item:hover {
+    box-shadow: 0 12px 16px 0 rgba(39,39,47,0.06);
+}
+
+.testimonial-item img {
+    width: 5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+}
+
+.testimonial-message {
+    font-size: 0.8rem;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+}
+
+.testimonial-item h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.verified {
+    font-size: 0.8rem;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+#contact-heading h1{
+    color: black;
+    margin: 0;
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 1.5rem;
+}
+
+#contact-info-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: aliceblue;
+}
+
+#contact-info-container h4{
+    text-align: center;
+}
+
+.contact-info{
+    margin-bottom: 0.8rem;
+    width: 30%;
+    color: black;
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    margin: 1.5rem;
+}
+
+.contact-info h3, .contact-info p{
+    margin: 0rem;
+}
+
+.contact-info i{
+    font-size: 2rem;
+    color: var(--col-1);
+}
+
+.contact-info h3{
+    color: var(--col-1);
+}
+
+.contact-info p{
+    color: grey;
+}
+
+#footer{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 5rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 3rem;
+    text-align: center;
+    
+}
+
+#footer h3{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+#footer-address{
+    width: 100%;
+}
+
+#footer-address p{
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0 2% 2% 0;
+}
+
+#footer-links ul, #footer-services ul{
+    list-style-type: none;
+    line-height: 2;
+    padding-left: 0;
+}
+
+#footer-links ul li a, #footer-services ul li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
